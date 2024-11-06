@@ -1,0 +1,32 @@
+
+@charset "utf-8";
+
+/* 한글 Pretendard */
+
+@font-face {
+	font-family:'Pretendard';
+	src: url(../fonts/Pretendard-1.3.9/web/variable/woff2/PretendardVariable.woff2);
+	font-weight: 300;
+}
+
+/* 영문 Times new roman */
+@font-face {
+   font-family:'Times new roman';
+   src: url(../fonts/times\ new\ roman.ttf);
+   font-weight: 400;
+}
+
+/* 영문 TimesNewerRoman */
+@font-face {
+   font-family:'TimesNewerRoman';
+   src: url(../fonts/TimesNewerRoman-Regular.otf);
+   font-weight: 300;
+}
+
+/* 영문 Instrument Sans */
+
+@font-face {
+   font-family:'Instrument Sans';
+   src: url(../fonts/Instrument_Sans/static/InstrumentSans-Regular.ttf);
+   font-weight: 300;
+}

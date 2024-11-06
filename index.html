@@ -7,15 +7,18 @@
 
    <!-- CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/static/pretendard.min.css">
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+   <link rel="stylesheet" href="./css/font.css">
    <link rel="stylesheet" href="./css/main.css">
 
    <!-- js -->
    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-   <!-- <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script> -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
    <script defer src="js/main.js"></script>
 
 </head>
@@ -48,7 +51,7 @@
 
                   <li>
                      <span>Collection</span>
-                     <div class="dep2_wrap">
+                     <div class="dep2_wrap before_line">
                         <ul class="dep2">
                            <li>포스처피딕
                               <ul class="dep3">
@@ -73,10 +76,12 @@
                   </li>
 
                   <li>
-                     <span>
+                     <span class="gnb_shop" >
                      <a href="#">Shop</a>
+                     <div class="shop_point"></div>
                      </span>
-                     <div class="dep2_wrap">
+
+                     <div class="dep2_wrap before_line">
                         <ul class="dep2">
                            <li>매트리스
                               <ul class="dep3">
@@ -112,7 +117,7 @@
 
                   <li>
                      <span>Community</span>
-                     <div class="dep2_wrap">
+                     <div class="dep2_wrap before_line">
                         <ul class="dep2">
                            <li><a href="#">News</a></li>
                            <li><a href="#">Event</a></li>
@@ -124,7 +129,7 @@
 
                   <li>
                      <span>Customer Sevice</span>
-                     <div class="dep2_wrap">
+                     <div class="dep2_wrap before_line">
                         <ul class="dep2">
                            <li><a href="#">A/S안내</a></li>
                            <li><a href="#">정품안내</a></li>
@@ -140,16 +145,15 @@
 
          <div class="util">
             <ul>
-               <li><a href="#"><img src="./img/main/btn_store.svg" alt="매장찾기"></a></li>
-               <li><a href="#"><img src="./img/main/btn_cart.svg" alt="장바구니"></a></li>
-               <li><a href="#"><img src="./img/main/btn_mypage.svg" alt="로그인"></a></li>
+               <li><a href="#"><img src="../img/main/btn_store.svg" alt="매장찾기"></a></li>
+               <li><a href="#"><img src="../img/main/btn_cart.svg" alt="장바구니"></a></li>
+               <li><a href="#"><img src="../img/main/btn_mypage.svg" alt="로그인"></a></li>
                <li>
-                  <button class="btn_search_open"><img src="./img/main/btn_search.svg" alt="검색"></button>
+                  <button class="btn_search_open"><img src="../img/main/btn_search.svg" alt="검색"></button>
                </li>
             </ul>
          </div>
 
-<!-- ********* quick_search 수정 필요 -->
          <div class="quick_search">
             <div class="searchInner">
                   <div class="search">
@@ -157,7 +161,7 @@
                         <form action="">
                            <input type="text">
                            <button>
-                              <img src="./img/main/btn_search.svg" alt="검색" style="fill: rgba(122, 174, 211, 0);">
+                              <img src="../img/main/btn_search.svg" alt="검색" style="fill: rgba(122, 174, 211, 0);">
                            </button>
                         </form>
                      </div>
@@ -178,33 +182,27 @@
                         <ul>
                            <li>
                               <div>
-                                 <a href="#"><img src="./img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="Edgar II Plush(에드가 2 플러쉬) SS"></a>
+                                 <a href="#"><img src="../img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="Edgar II Plush(에드가 2 플러쉬) SS"></a>
                                  <strong>Edgar II Plush(에드가 2 플러쉬) SS</strong>
                                  <p>사이즈: SS/Q/KI/CK/RK</p>
                                  <p>쿠션감:Plush(소프트)</p>
                                  <p>1,605,000원</p>
-                                 <!-- <div class="quickHeart">
-                                    <img src="img/main/icon_202310051737003500.png" alt="">
-                                 </div> -->
+
                               </div>
-
-
                            </li>
-
                            <li>
                               <div>
-                                 <a href="#"><img src="./img/main/221bb031eb6ba75b04ed85aae2f03093.jpg" alt="Marry Me2(메리미 2) SS"></a>
+                                 <a href="#"><img src="../img/main/221bb031eb6ba75b04ed85aae2f03093.jpg" alt="Marry Me2(메리미 2) SS"></a>
                                  <strong>Marry Me2(메리미 2) SS</strong>
                                  <p>사이즈: SS/Q/KI/CK/RK</p>
                                  <p>쿠션감:Cushion Firm(미디엄 하드)</p>
                                  <p>894,000원</p>
-                                 <!-- <img src="img/main/icon_202310051737003500.png" alt=""> -->
                               </div>
                            </li>
 
                            <li>
                               <div>
-                                 <a href="#"><img src="./img/main/50dc5312b8340f8e55277d3ebe1db4f7.jpg" alt="Souffle(슈플레)"></a>
+                                 <a href="#"><img src="../img/main/50dc5312b8340f8e55277d3ebe1db4f7.jpg" alt="Souffle(슈플레)"></a>
                                  <strong>Souffle(슈플레)</strong>
                                  <p>사이즈: SS/Q/KI/CK/RK</p>
                                  <p>컬러:다크그레이, 라이트그레이,베이지</p>
@@ -214,7 +212,7 @@
 
                            <li>
                               <div>
-                                 <a href="#"><img src="./img/main/221bb031eb6ba75b04ed85aae2f03093.jpg" alt="Marry Me2(메리미 2) Q"></a>
+                                 <a href="#"><img src="../img/main/221bb031eb6ba75b04ed85aae2f03093.jpg" alt="Marry Me2(메리미 2) Q"></a>
                                  <strong>Marry Me2(메리미 2) Q</strong>
                                  <p>사이즈: SS/Q/KI/CK</p>
                                  <p>쿠션감:Cushion Firm(미디엄 하드)</p>
@@ -224,7 +222,7 @@
 
                            <li>
                               <div>
-                                 <a href="#"><img src="./img/main/221bb031eb6ba75b04ed85aae2f03093.jpg" alt="Marry Me2(메리미 2) KI"></a>
+                                 <a href="#"><img src="../img/main/221bb031eb6ba75b04ed85aae2f03093.jpg" alt="Marry Me2(메리미 2) KI"></a>
                                  <strong>Marry Me2(메리미 2) KI</strong>
                                  <p>사이즈: SS/Q/KI/CK</p>
                                  <p>쿠션감:Cushion Firm(미디엄 하드)</p>
@@ -246,39 +244,39 @@
          <div thumbsSlider="" class="swiper-container mySwiper">
             <div class="swiper-wrapper">
                <div class="swiper-slide">
-                  <a href="#"><img src="./img/main/75de0631c0e27e8e501f3bf7e2661adb.jpg" alt=""/></a>
+                  <a href="#"><img src="../img/main/75de0631c0e27e8e501f3bf7e2661adb.jpg" alt=""/></a>
                </div>
                <div class="swiper-slide">
-                  <a href="#"><img src="./img/main/ec079d7d35d9e167b279e2ae38002f9d.png" alt=""/></a>
+                  <a href="#"><img src="../img/main/ec079d7d35d9e167b279e2ae38002f9d.png" alt=""/></a>
                </div>
             </div>
 
             <div class="swiper-pagination"></div>
                <!-- navigation buttons -->
-               <div class="swiper-button-left"><img src="./img/common/btn_slider_arrow.webp" alt=""></div>
-               <div class="swiper-button-right"><img src="./img/common/btn_slider_arrow.webp" alt=""></div>
+               <div class="swiper-button-left"><img src="../img/common/btn_slider_arrow.webp" alt=""></div>
+               <div class="swiper-button-right"><img src="../img/common/btn_slider_arrow.webp" alt=""></div>
          </div>
 
          <div class="swiper-container mySwiper2">
             <div class="swiper-wrapper">
                <div class="swiper-slide">
-                  <a href="#"><img src="./img/main/75de0631c0e27e8e501f3bf7e2661adb.jpg" alt=""/></a>
+                  <a href="#"><img src="../img/main/75de0631c0e27e8e501f3bf7e2661adb.jpg" alt=""/></a>
                </div>
                <div class="swiper-slide">
-                  <a href="#"><img src="./img/main/ec079d7d35d9e167b279e2ae38002f9d.png" alt=""/></a>
+                  <a href="#"><img src="../img/main/ec079d7d35d9e167b279e2ae38002f9d.png" alt=""/></a>
                </div>
             </div>
 
             <div class="swiper-auto-controls">
                <div class="auto-left button_wrap">
-                  <img src="./img/common/btn_slider_arrow.webp" alt="" class="auto-leftimg">
+                  <img src="../img/common/btn_slider_arrow.webp" alt="" class="auto-leftimg">
                </div>
                <div class="swiper-pagination2">
                   <span class="current">0</span>
                   <span class="total">0</span>
                </div>
                <div class="auto-right button_wrap">
-                  <img src="./img/common/btn_slider_arrow.webp" alt="" class="auto-rightimg">
+                  <img src="../img/common/btn_slider_arrow.webp" alt="" class="auto-rightimg">
                </div>
             </div>
 
@@ -287,13 +285,16 @@
 
       <section class="mainFrame">
          <div class="main_pr_wrap">
-            <img src="./img/main/lifeosealy.webp" alt="">
-
-            <div class="iframe_wrap">
-               <iframe src="https://www.youtube.com/embed/wJrlUJgj1Gg?vq=hd1080&controls=0&autoplay=1&mute=1&loop=1&showinfo=0&cc_load_policy=0&iv_load_policy=3&autohide=1&playsinline=1&playlist=wJrlUJgj1Gg"   allowfullscreen>
-               </iframe>
+            <div class="life_on_sealy">
+               <img src="../img/main/lifeosealy.webp" alt="">
             </div>
 
+            <div class="iframe_cont">
+               <div class="iframe_wrap">
+                  <iframe src="https://www.youtube.com/embed/wJrlUJgj1Gg?vq=hd1080&controls=0&autoplay=1&mute=1&loop=1&showinfo=0&cc_load_policy=0&iv_load_policy=3&autohide=1&playsinline=1&playlist=wJrlUJgj1Gg" allowfullscreen>
+                  </iframe>
+               </div>
+            </div>
             <div class="main_text">
                <span>Life ON Sealy</span>
             </div>
@@ -303,6 +304,7 @@
                <p class="ml3">포스처피딕 코일 시스템은 혁신적인 연구 개발을 통해 </p>
                <p class="ml4">전 세계 소비자의 건강한 수면 환경에 이바지하고 있습니다.</p>
             </div>
+
          </div>
       </section>
 
@@ -327,7 +329,7 @@
                                     씰리 코일 시스템은 뒤척임을 유발하는 압통점을 완화하여 신체 굴곡에 최적의 수면 자세를 제공합니다.
                                  </p>
                               </div>
-                                    <img src="./img/main/pc_sec03_01.webp" alt="">
+                                    <img src="../img/main/pc_sec03_01.webp" alt="">
                            </div>
                         </li>
                         <li>
@@ -339,7 +341,7 @@
                                  씰리 엣지 서포트 시스템은 매트리스의 가장자리가 처지는 것을 방지하여 넓고 안정적인 수면 공간을 완성해 줍니다.
                               </p>
                            </div>
-                                 <img src="./img/main/pc_sec03_02.webp" alt="" style="width: 848px; height: 651px;">
+                                 <img src="../img/main/pc_sec03_02.webp" alt="" style="width: 848px; height: 651px;">
                            </div>
                         </li>
                         <li>
@@ -351,7 +353,7 @@
                                  충전재는 침대의 느낌(단단함, 부드러움)을 결정짓는 중요한 요소들 중 하나입니다.
                               </p>
                            </div>
-                                 <img src="./img/main/pc_sec03_03.webp" alt="">
+                                 <img src="../img/main/pc_sec03_03.webp" alt="">
                            </div>
                         </li>
                         <li>
@@ -363,7 +365,7 @@
                                  씰리침대는 오랜연구를 통해 특허를 받은 기술력과 장인정신이 깃든 깐깐한 공정을 바탕으로 프리미엄 제품생산을 위해 끔임없이 노력합니다.
                               </p>
                            </div>
-                                 <img src="./img/main/pc_sec03_04.webp" alt="">
+                                 <img src="../img/main/pc_sec03_04.webp" alt="">
                            </div>
                         </li>
                      </ul>
@@ -389,6 +391,7 @@
                   <div class="collect_bg">
                      <img src="../img/main/pc_sec04_01_bg.webp" alt="">
                   </div>
+
                   <div class="collect_title">
                      <div class="title">
                         <span class="title_number">02</span>
@@ -397,6 +400,7 @@
                      </div>
                   </div>
                </div>
+
                <ul>
                   <li>
                      <div class="bg_floor">
@@ -482,7 +486,7 @@
       <section class="bet">
          <div class="bet_wrap">
             <div class="bet_left">
-               <img src="./img/main/9fb2c1fad9a1bc7460b409e066f023e1.jpg" alt="신규 회원가입 혜택">
+               <img src="../img/main/9fb2c1fad9a1bc7460b409e066f023e1.jpg" alt="신규 회원가입 혜택">
                <div class="left_txt common_txt">
                   <button>View More</button>
                      <a href="#"></a>
@@ -490,7 +494,7 @@
             </div>
 
             <div class="bet_right">
-               <img src="./img/main/8c8fc58e8e3913bc92b34c99c1e50a97.jpg" alt="리뷰 작성 이벤트">
+               <img src="../img/main/8c8fc58e8e3913bc92b34c99c1e50a97.jpg" alt="리뷰 작성 이벤트">
                <div class="right_txt common_txt">
                   <button>View More</button>
                   <a href="#"></a>
@@ -500,32 +504,34 @@
       </section>
 
       <section class="shop">
-         <div class="shop_wrap">
-            <div class="title">
-               <span class="title_number">03</span>
-               <span class="title_bar"></span>
-               <span class="title_name">shop</span>
-            </div>
+         <div class="inner">
+            <div class="shop_wrap">
+               <div class="title">
+                  <span class="title_number">03</span>
+                  <span class="title_bar"></span>
+                  <span class="title_name">shop</span>
+               </div>
 
-            <div class="shopH2">
-               <h2>Sealy's <span>products</span></h2>
-               <div class="common_txt">
-                  <button>View More</button>
-                     <a href="#"></a>
+               <div class="shopH2">
+                  <h2>Sealy's <span>products</span></h2>
+                  <div class="common_txt">
+                     <button>View More</button>
+                        <a href="#"></a>
+                  </div>
                </div>
             </div>
-         </div>
+
             <div class="swiper shopSwiper">
                <div class="swiper-wrapper shopWrapper">
                   <div class="swiper-slide">
                      <div class="slide_link">
                      <a href="#">
-                        <img src="./img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="">
+                        <img src="../img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="">
                         <strong>Edgar II Plush(에드가 2 플러쉬) SS</strong>
                      </a>
                      </div>
                      <div class="slide_heart">
-                        <img src="./img/main/icon_202310051737003500.png" alt="">
+                        <img src="../img/main/icon_202310051737003500.png" alt="">
                      </div>
                      <div class="slide_text">
                         <div class="text_p">
@@ -538,12 +544,12 @@
                   <div class="swiper-slide">
                         <div class="slide_link">
                            <a href="">
-                              <img src="./img/main/1cfe064ebec15b638e916a538e9a0c5d.jpg" alt="">
+                              <img src="../img/main/1cfe064ebec15b638e916a538e9a0c5d.jpg" alt="">
                               <strong>S238 Fabric(S238 패브릭)</strong>
                            </a>
                         </div>
                         <div class="slide_heart">
-                           <img src="./img/main/icon_202310051737003500.png" alt="">
+                           <img src="../img/main/icon_202310051737003500.png" alt="">
                         </div>
 
                         <div class="slide_text">
@@ -557,12 +563,12 @@
                   <div class="swiper-slide ">
                         <div class="slide_link">
                            <a href="">
-                              <img src="./img/main/6089d099ff0dc0a572393c7a30f97f2f.jpg" alt="">
+                              <img src="../img/main/6089d099ff0dc0a572393c7a30f97f2f.jpg" alt="">
                               <strong>Batard(바타르)</strong>
                            </a>
                         </div>
                         <div class="slide_heart">
-                           <img src="./img/main/icon_202310051737003500.png" alt="">
+                           <img src="../img/main/icon_202310051737003500.png" alt="">
                         </div>
                         <div class="slide_text">
                            <div class="text_p">
@@ -575,12 +581,12 @@
                   <div class="swiper-slide">
                         <div class="slide_link">
                            <a href="">
-                              <img src="./img/main/e445fadc892dafb1c63b92d73568e464.jpg" alt="">
+                              <img src="../img/main/e445fadc892dafb1c63b92d73568e464.jpg" alt="">
                               <strong>Torte(토르테)</strong>
                            </a>
                         </div>
                         <div class="slide_heart">
-                           <img src="./img/main/icon_202310051737003500.png" alt="">
+                           <img src="../img/main/icon_202310051737003500.png" alt="">
                         </div>
                         <div class="slide_text">
                            <div class="text_p">
@@ -593,12 +599,12 @@
                   <div class="swiper-slide">
                         <div class="slide_link">
                            <a href="">
-                              <img src="./img/main/6695470160d24a013011d1835ccf071e.jpg" alt="">
+                              <img src="../img/main/6695470160d24a013011d1835ccf071e.jpg" alt="">
                               <strong>Sable(샤브레) SS</strong>
                            </a>
                         </div>
                         <div class="slide_heart">
-                           <img src="./img/main/icon_202310051737003500.png" alt="">
+                           <img src="../img/main/icon_202310051737003500.png" alt="">
                         </div>
                         <div class="slide_text">
                            <div class="text_p">
@@ -616,7 +622,7 @@
                            </a>
                         </div>
                         <div class="slide_heart">
-                           <img src="./img/main/icon_202310051737003500.png" alt="">
+                           <img src="../img/main/icon_202310051737003500.png" alt="">
                         </div>
                         <div class="slide_text">
                            <div class="text_p">
@@ -629,12 +635,12 @@
                   <div class="swiper-slide">
                      <div class="slide_link">
                         <a href="">
-                           <img src="./img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="">
+                           <img src="../img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="">
                            <strong>Edgar II Plush(에드가 2 플러쉬) Q</strong>
                         </a>
                      </div>
                      <div class="slide_heart">
-                        <img src="./img/main/icon_202310051737003500.png" alt="">
+                        <img src="../img/main/icon_202310051737003500.png" alt="">
                      </div>
                      <div class="slide_text">
                         <div class="text_p">
@@ -644,16 +650,19 @@
                         <span>1,794,000원</span>
                      </div>
                   </div>
+
                   <div class="swiper-slide">
                      <div class="slide_link">
                         <a href="">
-                           <img src="./img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="">
+                           <img src="../img/main/41f8061196c38055b2e8d08e3059d8f8.jpg" alt="">
                            <strong>Edgar II Plush(에드가 2 플러쉬) KI</strong>
                         </a>
                      </div>
+
                      <div class="slide_heart">
-                        <img src="./img/main/icon_202310051737003500.png" alt="">
+                        <img src="../img/main/icon_202310051737003500.png" alt="">
                      </div>
+
                      <div class="slide_text">
                         <div class="text_p">
                            <p>사이즈 : SS / Q / KI / CK / RK</p>
@@ -663,32 +672,33 @@
                      </div>
                   </div>
                </div>
-               <!-- <div class="swiper-button-next"></div>
-               <div class="swiper-button-prev"></div> -->
+
                <div class="swiper-pagination"></div>
             </div>
+
             <div class="cursor">Drag</div>
+      </div>
       </section>
 
       <section class="community">
          <div class="inner">
-            <div class="comm_cont">
-                  <div class="title_wrap">
-                     <div class="title">
-                        <span class="title_number">04</span>
-                        <span class="title_bar"></span>
-                        <span class="title_name">community</span>
-                     </div>
-
-                     <div class="with_title">
-                        <strong>With</strong>
-                        <span>Sealy</span>
-                     </div>
+               <div class="title_wrap">
+                  <div class="title">
+                     <span class="title_number">04</span>
+                     <span class="title_bar"></span>
+                     <span class="title_name">community</span>
                   </div>
                </div>
+
+               <div class="community_under">
+                  <div class="with_title">
+                     <strong>With</strong>
+                     <span>Sealy</span>
+                  </div>
+
                   <div class="with_box_wrap">
                      <div class="with_hotels with_box">
-                        <a href="#"><img src="./img/main/pc_sec07_04.webp" alt="#">
+                        <a href="#"><img src="../img/main/pc_sec07_04.webp" alt="#">
                            <div class="box_txt">
                               <strong>With Hotels</strong>
                               <p>전 세계적으로 사랑받은 <br> 씰리 침대를 확인해보세요</p>
@@ -697,7 +707,7 @@
                      </div>
 
                      <div class="with_event with_box">
-                        <a href="#"><img src="./img/main/pc_sec07_06.webp" alt="#">
+                        <a href="#"><img src="../img/main/pc_sec07_06.webp" alt="#">
                            <div class="box_txt">
                            <strong>Event</strong>
                            <p>씰리에서 진행중인 <br> 이벤트를 확인해보세요</p>
@@ -707,7 +717,7 @@
 
                      <div class="with_review with_box">
                         <a href="#">
-                           <img src="./img/main/pc_sec07_05.webp" alt="#">
+                           <img src="../img/main/pc_sec07_05.webp" alt="#">
                            <div class="box_txt">
                               <strong>Review</strong>
                               <p>씰리 고객님의 <br>다양한 리뷰를 공유합니다</p>
@@ -715,6 +725,7 @@
                         </a>
                      </div>
                   </div>
+               </div>
 
             </div>
       </section>
@@ -727,9 +738,7 @@
                   <ul class="menuList">
                      <li>
                         <div class="list_n">
-                           <a href="#">
-                              <!-- <img src="img/main/5_1.svg" alt=""> -->
-                           </a>
+                           <a href="#"></a>
                            <div class="list">
                               <strong>씰리코리아 매장찾기</strong>
                               <span>전국에 있는 씰리 매장을 찾아보세요</span>
@@ -739,9 +748,7 @@
 
                      <li>
                         <div class="list_n">
-                           <a href="#">
-                              <!-- <img src="img/main/5_2.svg" alt=""> -->
-                           </a>
+                           <a href="#"></a>
                            <div class="list">
                               <strong>A/S접수를 하고 싶어요</strong>
                               <span>씰리 제품의 A/S접수를 더 빠르고 정확하게 신청해보세요.</span>
@@ -751,9 +758,7 @@
 
                      <li>
                         <div class="list_n">
-                           <a href="#">
-                              <!-- <img src="img/main/5_3.svg" alt=""> -->
-                           </a>
+                           <a href="#"></a>
                            <div class="list">
                               <strong>자주 묻는 질문 모음FAQ</strong>
                               <span>다양한 글로벌 씰리의 궁금한 점을 해결해보세요.</span>
@@ -763,9 +768,7 @@
 
                      <li>
                         <div class="list_n">
-                           <a href="#">
-                              <!-- <img src="img/main/5_4.svg" alt=""> -->
-                           </a>
+                           <a href="#"></a>
                            <div class="list">
                               <strong>정품인증을 어떻게 하나요?</strong>
                               <span>씰리 제품의 정품인증을 간단하고 더 편리하게 해보세요.</span>
@@ -787,7 +790,7 @@
 
                <div class="inner_left">
                   <div class="footer_left">
-                     <img src="./img/main/footer_logo.svg" alt="">
+                     <img src="../img/main/footer_logo.svg" alt="">
                   </div>
 
                   <div class="footer_top_wrap">
@@ -795,32 +798,32 @@
                      <div class="top_inner">
                         <div class="footer_txt_wrap">
                            <address class="txt_left">
-                              <span class="title">대표자</span>
+                              <span class="titlename">대표자</span>
                               <span class="mean">윤종효</span><br>
-                              <span class="title">주소</span>
+                              <span class="titlename">주소</span>
                               <span class="mean">서울특별시 강남구 삼성로633(삼성동) 삼광빌딩 3층,2층</span><br>
-                              <span class="title">사업자등록번호</span>
+                              <span class="titlename">사업자등록번호</span>
                               <span class="mean">114-86-39564</span>
                               <button>사업자등록정보</button>
                            </address>
 
                            <address class="txt_right">
-                              <span class="title">개인정보관리책임자</span>
+                              <span class="titlename">개인정보관리책임자</span>
                               <span class="mean">소병준</span><br>
-                              <span class="title">통신판매업 신고번호</span>
+                              <span class="titlename">통신판매업 신고번호</span>
                               <span class="mean">제 2014-서울강남-01573호</span>
                            </address>
                         </div>
                      </div>
 
                      <div class="footer_bottom">
-                       <div class="bottom_a">
-                         <a href="#" target="_blank">이용약관</a>
-                         <a class="bottom_prv" href="#" target="_blank">개인정보 처리방침</a>
-                         <a href="#" target="_blank">Sealy Whistleblower Policy</a>
-                         <a href="#" target="_blank">1:1문의</a>
-                         <a href="#" target="_blank">FAQ</a>
-                       </div>
+                        <div class="bottom_a">
+                           <a href="#" target="_blank">이용약관</a>
+                           <a class="bottom_prv" href="#" target="_blank">개인정보 처리방침</a>
+                           <a href="#" target="_blank">Sealy Whistleblower Policy</a>
+                           <a href="#" target="_blank">1:1문의</a>
+                           <a href="#" target="_blank">FAQ</a>
+                        </div>
                         <p class="copyright"> Copyrights &copy; Sealy Korea Company All Rights Reserverd</p>
                      </div>
                   </div>
@@ -835,22 +838,16 @@
                      </p>
 
                      <div class="f_right_img">
-                        <a href="#"><span class="screen_out">facebook</span>
-                        <!-- <img src="img/main/footer_sns_facebook.webp" alt=""> -->
-                        </a>
-                        <a href="#"><span class="screen_out">instagram</span>
-                        <!-- <img src="img/main/footer_sns_insta.webp" alt=""> -->
-                        </a>
-                        <a href="#"><span class="screen_out">naver</span>
-                        <!-- <img src="img/main/footer_sns_naver.webp" alt=""> -->
-                        </a>
+                        <a href="#"><span class="screen_out">facebook</span></a>
+                        <a href="#"><span class="screen_out">instagram</span></a>
+                        <a href="#"><span class="screen_out">naver</span></a>
                      </div>
                   </div>
                </div>
             </div>
          </div>
          <p class="bottom_bg">Your Life On Sealy</p>
-      <!-- </div> -->
+      </div>
    </footer>
 
 </body>

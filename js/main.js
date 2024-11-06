@@ -1,16 +1,19 @@
 
    $('.header_inner #gnb .dep1>li').mouseover(function(){
-      $('.dep2_wrap').show();
-      $('header').addClass('on').css({'height':'700px'});
-      // $('#gnb .dep1').css({'border-bottom' : '1px solid rgba(122, 173, 211, 0.8)'})
-      // $('#gnb .dep2_wrap').css({'border-left' : '1px solid rgba(122, 173, 211, 0.8)'},{'margin-left': '25px'})
+      $('.dep2_wrap').show()
+      $('header').addClass('on').css({'height':'600px'});
+      $('.header_inner').css({'border-bottom' : '1px solid rgba(122, 173, 211, 0.5)'})
+      $('.header_inner #gnb .dep1 span' ).css({'width': '200px'})
       })
 
    $('.header_inner #gnb .dep1>li').mouseout(function(){
       $('.dep2_wrap').hide();
       $('header').removeClass('on').css({'height':'auto'});
       $('#gnb .dep1').css({'border-bottom' : 'none'})
+      $('.header_inner').css({'border-bottom' : 'none'})
+      $('.header_inner #gnb .dep1 span' ).css({'width': '150px'})
    })
+
 
    $(window).scroll(function() {
       if($(window).scrollTop() >= 10) {
@@ -23,18 +26,9 @@
 
    $('.util .btn_search_open').click(function() {
       $('.quick_search').toggle();
+
    })
 
-
-
-   // $(window).scroll(function() {
-   //    if($(window).scrollTop() >= 1) {
-   //       $('iframe_wrap iframe').css('transform', 'scaleX(0)')
-   //    }
-   //    else {
-   //       $('iframe_wrap iframe').css('transform', 'scaleX(1)')
-   //    }
-   // });
 
 // main_visul
    var swiper = new Swiper(".mySwiper", {
@@ -71,84 +65,7 @@
 
    });
 
-   // let total = $('.mySwiper2 .swiper-slide img').length
-   // $('.swiper-pagination2 .total').text(total)
-
-   // let current = 1; //click, function(){} 안에 들어가야함
-   // $('.swiper-pagination2 .current').text(current)
-
-   // $('.auto-left .auto-leftimg').click(function(){
-   //    current = (current <= 1) ? total : current - 1;
-   //    $('.swiper-pagination2 .current').text(current)
-
-   // })
-   // $('.auto-left .auto-rightimg').click(function(){
-   //    current = (current >= total) ? 1 : current + 1;
-   //    $('.swiper-pagination2 .current').text(current)
-   // })
-
-
-
-   var textWrapper = document.querySelector('.ml2');
-   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-   anime.timeline({loop: true})
-      .add({
-         targets: '.ml2 .letter',
-         scale: [4,1],
-         opacity: [0,1],
-         translateZ: 0,
-         easing: "easeOutExpo",
-         duration: 950,
-         delay: (el, i) => 70*i
-      }).add({
-         targets: '.ml2',
-         opacity: 0,
-         duration: 1000,
-         easing: "easeOutExpo",
-         delay: 1000
-      })
-
-
-   var textWrapper = document.querySelector('.ml3');
-   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-   anime.timeline({loop: true})
-   .add({
-   targets: '.ml3 .letter',
-   scale: [4,1],
-   opacity: [0,1],
-   translateZ: 0,
-   easing: "easeOutExpo",
-   duration: 950,
-   delay: (el, i) => 70*i
-   }).add({
-   targets: '.ml3',
-   opacity: 0,
-   duration: 1000,
-   easing: "easeOutExpo",
-   delay: 1000
-   })
-
-   var textWrapper = document.querySelector('.ml4');
-   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-   anime.timeline({loop: true})
-   .add({
-      targets: '.ml4 .letter',
-      scale: [4,1],
-      opacity: [0,1],
-      translateZ: 0,
-      easing: "easeOutExpo",
-      duration: 950,
-      delay: (el, i) => 70*i
-   }).add({
-      targets: '.ml4',
-      opacity: 0,
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000
-   });
-
-   var swiper = new Swiper(".shopSwiper", {
+   var shopSwiper = new Swiper(".shopSwiper", {
    pagination: {
       el: ".swiper-pagination",
       type: "progressbar",
@@ -196,5 +113,18 @@ $('.aboutList li').mouseleave(function(){
    $('.aboutSlider').eq($(this).index()).css({
       display:'flex'
    })
+})
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.to('.iframe_cont',{
+   width: '100%',
+   scrollTrigger:{
+      trigger:'.mainFrame',
+      start: 'top top',
+      end: `600 top`,
+      pin: true,
+      scrub: true,
+      markers: false,
+   }
 })
 
